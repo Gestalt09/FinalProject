@@ -1,4 +1,4 @@
-package Runners;
+package runners;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -9,11 +9,14 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         tags = "@SmokeTest",
         features = "src/test/resources",
-        glue = {"Steps"},
+        glue = {"steps"},
         plugin = {"pretty"}
+
         )
 
-public class TestRunner {
+public class
+TestRunner {
+
 
 }
 

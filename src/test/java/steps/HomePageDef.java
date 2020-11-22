@@ -1,25 +1,16 @@
-package Steps;
+package steps;
 
-import Helpers.Hooks;
-import Models.UserModel;
-import Pages.HomePage;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import models.UserModel;
+import pages.HomePage;
 
-public class HomePageDef extends Hooks {
-    @Before
-     public void intialisation(){
-        start();
-    }
+import static com.codeborne.selenide.Selenide.open;
 
-    @After
-    public void teardown(){
-        finish();
-    }
+public class HomePageDef  {
+
 
     HomePage homepage = new HomePage();
 
@@ -30,8 +21,7 @@ public class HomePageDef extends Hooks {
     }
 
     @When("^I Open (.*)$")
-    public void iOpenHttpsWwwALv(String url) {
-    }
+    public void iOpenHttpsWwwALv(String url) { open(url);}
 
 
     @Then("Enter product")

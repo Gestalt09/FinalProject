@@ -1,10 +1,10 @@
-package Steps;
+package steps;
 
-import Models.UserModel;
-import Pages.ShippingPage;
 import cucumber.api.java.en.And;
+import models.UserModel;
+import pages.ShippingPage;
 
-public class ShippingPageDef {
+public class ShippingPageDef  {
     ShippingPage shippingPage = new ShippingPage();
 
     @And("Click get in office")

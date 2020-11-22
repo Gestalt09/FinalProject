@@ -1,15 +1,15 @@
-package Tests;
+package tests;
 
-import Models.UserModel;
-import Pages.*;
+import models.UserModel;
 import org.junit.Test;
+import pages.*;
 
 import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.sleep;
 
 
-public class OneATest {
+public class OneATest  {
     @Test
     public void firstTest() {
         baseUrl = "https://www.1a.lv/";
@@ -34,6 +34,7 @@ public class OneATest {
         brandpage.chooseMaxPrice();
         brandpage.clickOnProduct();
         productPage.clickAddToCart();
+        sleep(2000);
         productPage.clickGoToCart();
         checkOutPage.clickCheckOutButton();
         enterToAccountPage.enterEmail(UserModel.email);

@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 public class UserModel {
     public static final String product = "video card";

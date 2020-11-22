@@ -1,10 +1,9 @@
-package Steps;
+package steps;
 
-import Helpers.Hooks;
-import Pages.ProductPage;
 import cucumber.api.java.en.And;
+import pages.ProductPage;
 
-public class ProductPageDef extends Hooks {
+public class ProductPageDef  {
     ProductPage productPage = new ProductPage();
 
     @And("Click add to cart")

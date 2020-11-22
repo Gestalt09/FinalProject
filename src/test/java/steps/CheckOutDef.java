@@ -1,10 +1,9 @@
-package Steps;
+package steps;
 
-import Helpers.Hooks;
-import Pages.CheckOutPage;
 import cucumber.api.java.en.And;
+import pages.CheckOutPage;
 
-public class CheckOutDef extends Hooks {
+public class CheckOutDef  {
     CheckOutPage checkOutPage = new CheckOutPage();
 
 

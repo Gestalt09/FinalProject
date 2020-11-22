@@ -1,17 +1,18 @@
-package Steps;
+package steps;
 
-import Helpers.Hooks;
-import Pages.BrandPage;
 import cucumber.api.java.en.And;
+import pages.BrandPage;
 
-public class BrandpageDef extends Hooks {
+public class BrandpageDef  {
 
 
 
     BrandPage brandpage = new BrandPage();
 
+    @And("Click on first black pop-up")
+    public void clickOnFirstBlackPopUp() { brandpage.clickOnBlackPopUp();}
 
-    @And("^Click on pop-up$")
+    @And("^Click on seconde pop-up$")
     public void clickOnPopUp() {
         brandpage.clickOnPopUp();
     }
@@ -30,4 +31,6 @@ public class BrandpageDef extends Hooks {
 
     @And("Click on product")
     public void clickOnProduct() { brandpage.clickOnProduct();}
+
+
 }

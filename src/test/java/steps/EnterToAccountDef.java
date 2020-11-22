@@ -1,10 +1,10 @@
-package Steps;
+package steps;
 
-import Models.UserModel;
-import Pages.EnterToAccountPage;
 import cucumber.api.java.en.And;
+import models.UserModel;
+import pages.EnterToAccountPage;
 
-public class EnterToAccountDef {
+public class EnterToAccountDef  {
     EnterToAccountPage enterToAccountPage= new EnterToAccountPage();
 
     @And("Input email")

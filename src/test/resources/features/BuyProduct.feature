@@ -6,7 +6,8 @@ Feature: Buying product
     When I Open https://www.1a.lv/
     Then Enter product
     And Press "Search" button
-    And Click on pop-up
+    And Click on first black pop-up
+    And Click on seconde pop-up
     And Choose brand
     And Click on filter Button
     And Filter start from max price

@@ -1,5 +1,6 @@
 package tests;
 
+import models.ProductModel;
 import models.UserModel;
 import org.junit.Test;
 import pages.*;
@@ -26,7 +27,8 @@ public class OneATest  {
 
 
 
-        homepage.inputProductName(UserModel.product);
+
+        homepage.inputProductName(ProductModel.product);
         homepage.pressSearchButton();
         brandpage.clickOnPopUp();
         brandpage.chooseBrand();

@@ -3,7 +3,7 @@ package steps;
 import cucumber.api.java.en.And;
 import pages.CheckOutPage;
 
-public class CheckOutDef  {
+public class CheckOutStepDef {
     CheckOutPage checkOutPage = new CheckOutPage();
 
 

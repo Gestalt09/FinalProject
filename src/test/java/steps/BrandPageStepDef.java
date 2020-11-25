@@ -3,14 +3,13 @@ package steps;
 import cucumber.api.java.en.And;
 import pages.BrandPage;
 
-public class BrandpageDef  {
+public class BrandPageStepDef {
 
 
 
     BrandPage brandpage = new BrandPage();
 
-    @And("Click on first black pop-up")
-    public void clickOnFirstBlackPopUp() { brandpage.clickOnBlackPopUp();}
+
 
     @And("^Click on seconde pop-up$")
     public void clickOnPopUp() {

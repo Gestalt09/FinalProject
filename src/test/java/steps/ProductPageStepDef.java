@@ -3,7 +3,7 @@ package steps;
 import cucumber.api.java.en.And;
 import pages.ProductPage;
 
-public class ProductPageDef  {
+public class ProductPageStepDef {
     ProductPage productPage = new ProductPage();
 
     @And("Click add to cart")

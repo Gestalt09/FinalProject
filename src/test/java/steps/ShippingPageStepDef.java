@@ -4,7 +4,7 @@ import cucumber.api.java.en.And;
 import models.UserModel;
 import pages.ShippingPage;
 
-public class ShippingPageDef  {
+public class ShippingPageStepDef {
     ShippingPage shippingPage = new ShippingPage();
 
     @And("Click get in office")

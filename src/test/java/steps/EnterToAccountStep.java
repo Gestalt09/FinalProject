@@ -4,7 +4,7 @@ import cucumber.api.java.en.And;
 import models.UserModel;
 import pages.EnterToAccountPage;
 
-public class EnterToAccountDef  {
+public class EnterToAccountStep {
     EnterToAccountPage enterToAccountPage= new EnterToAccountPage();
 
     @And("Input email")

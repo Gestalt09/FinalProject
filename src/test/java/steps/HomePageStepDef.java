@@ -1,6 +1,7 @@
 package steps;
 
-import cucumber.api.java.en.And;
+import com.codeborne.selenide.Configuration;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -9,27 +10,27 @@ import pages.HomePage;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class HomePageDef  {
+public class HomePageStepDef {
 
 
     HomePage homepage = new HomePage();
 
-
-    @Given("Open Chrome browser")
-    public void openChromeBrowser() {
-
+    @Before
+    public void setUp(){
+        Configuration.startMaximized =true;
     }
 
-    @When("^I Open (.*)$")
+
+    @Given("^I Open (.*)$")
     public void iOpenHttpsWwwALv(String url) { open(url);}
 
 
-    @Then("Enter product")
+    @When("Enter product")
     public void enterProduct() {
         homepage.inputProductName(ProductModel.product);
     }
 
-    @And("Press {string} button")
+    @Then("Press {string} button")
     public void pressButton(String Search) { homepage.pressSearchButton();
 
     }

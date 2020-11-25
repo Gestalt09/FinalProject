@@ -1,12 +1,11 @@
 @SmokeTest
 
 Feature: Buying product
-  Scenario:  I Open Browser
-    Given  Open Chrome browser
-    When I Open https://www.1a.lv/
-    Then Enter product
-    And Press "Search" button
-    And Click on first black pop-up
+  Scenario:  I search product vide card and
+  after adding it to the cart i filling shipping form
+    Given  I Open https://www.1a.lv/
+    When Enter product
+    Then Press "Search" button
     And Click on seconde pop-up
     And Choose brand
     And Click on filter Button

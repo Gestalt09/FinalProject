@@ -11,10 +11,10 @@ public class BrandPage  {
     private SelenideElement iframe = $(By.id("mt-85722e86e2506dfe"));
     private SelenideElement blackPopUp =$(By.xpath("//div[@class='close-button-slider desktop']"));
     private SelenideElement popUp =$(By.xpath("//a[@class='c-button-inverse']"));
-    private SelenideElement brandButton = $(By.xpath("//a[@class='filter-link']//span[contains(text(),'Gigabyte')]"));
-    private SelenideElement filterButton = $(By.xpath("//div[@class='sort-select-wrap']"));
+    private SelenideElement brandButton = $(By.xpath("//a[@class='ks-filter-link']//span[contains(text(),'Gigabyte')]"));
+    private SelenideElement filterButton = $(By.xpath("//div[@class='ks-sort-select-wrap']"));
     private SelenideElement maxPrice =$(By.xpath("//li[@class='select2-results__option']"));
-    private SelenideElement product =$(By.xpath("//div[@class='sn-docs js-product-container product-grid-row']//div[4][@class='new-product-item catalog-taxons-product']//div[@class='gtm-categories new-product-hover']"));
+    private SelenideElement product =$(By.xpath("//a[@data-gtm-link='411676']"));
 
 
 

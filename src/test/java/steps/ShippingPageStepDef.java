@@ -18,4 +18,8 @@ public class ShippingPageStepDef {
 
     @And("Click continue button again")
     public void clickContinueButtonAgain() { shippingPage.clickContinueButtonAtShippingStage();}
+
+
+    @And("Click continue button seconde time")
+    public void clickContinueButtonSecondeTime() { shippingPage.clickContinueButtonAtShippingStageAgain();}
 }

@@ -22,7 +22,9 @@ public class HomePageStepDef {
 
 
     @Given("^I Open (.*)$")
-    public void iOpenHttpsWwwALv(String url) { open(url);}
+    public void iOpenHttpsWwwALv(String url) { open(url);
+
+    }
 
 
     @When("Enter product")

@@ -20,4 +20,5 @@ Feature: Buying product
     And Click on first shop
     And input user data
     And Click continue button again
+    And Click continue button seconde time
 

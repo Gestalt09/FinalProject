@@ -22,6 +22,7 @@ public class ShippingPage {
         this.phoneNumberbar.setValue(phone);
     }
     public void clickContinueButtonAtShippingStage(){this.continueButtonAtShipping.click();}
+    public void clickContinueButtonAtShippingStageAgain(){this.continueButtonAtShipping.click();}
 
 
 }

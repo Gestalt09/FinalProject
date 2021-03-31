@@ -11,11 +11,15 @@ public class BrandPageStepDef {
 
 
 
-    @And("^Click on seconde pop-up$")
+
+    @And("^Click on pop up$")
     public void clickOnPopUp() {
         brandpage.clickOnPopUp();
     }
-
+    @And("^Click on black pop up$")
+    public void clickOnBlackPopUp() {
+        brandpage.clickOnBlackPopUp();
+    }
     @And("^Choose brand$")
     public void chooseBrand() {
         brandpage.chooseBrand();
